@@ -1,0 +1,48 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+img {
+  display: block;
+}
+
+.gameResult {
+  text-align: center;
+  font-size: 5em;
+  font-weight: bolder;
+  color: red;
+}
+
+.left {
+  position: fixed;
+  top: 20px;
+  left: 50px;
+  cursor: pointer;
+}
+
+.middle {
+  position: fixed;
+  top: 220px;
+  left: 400px;
+}
+
+.right {
+  position: fixed;
+  top: 220px;
+  left: 750px;
+}
+
+.userScore {
+  position: fixed;
+  top: 440px;
+  left: 500px;
+  font-size: 3em;
+}
+
+.botScore {
+  position: fixed;
+  top: 440px;
+  left: 850px;
+  font-size: 3em;
+}
