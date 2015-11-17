@@ -35,19 +35,20 @@ function playGame() {
     // THIS IS SO I CAN BE LAZY AND JUST USE THE SHORT VARIABLE NAME IN THE NEXT BIT
     var $u = $('.userScore');
     var $b = $('.botScore');
+    var $g = $('.gameResult');
 
     // CHECK WHO THE WINNER WAS, THEN UPDATE THE GAME RESULT TEXT AND THE SCORES
     switch(winner) {
       case 'player':
-        $('.gameResult').text('WIN!');
+        $g.text('WIN!');
         $u.text(+$u.text() + 1);
         break;
       case 'bot':
-        $('.gameResult').text('LOSE!');
+        $g.text('LOSE!');
         $b.text(+$b.text() + 1);
         break;
       case 'draw':
-        $('.gameResult').text('DRAW!');
+        $g.text('DRAW!');
         $u.text(+$u.text() + .5);
         $b.text(+$b.text() + .5);
         break;
